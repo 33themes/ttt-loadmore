@@ -11,27 +11,45 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-## Description
+## Who to use
 
+*The base html is like this:*
+```html
+<a href="#" data-tttloadmore-do="archiveposts" data-tttloadmore-to="#main" data-tttloadmore-args="category:php;">
+  Load more content
+</a>
+```
 
-### Create a Gallery
+* *data-tttloadmore-do* is the action to load more content
+* *data-tttloadmore-to* is where the script put the content after load more posts (the result of the "do" action)
+* *data-tttloadmore-args* is all the arguments want to send to the "do" action
 
-After activate the plugin a new metabox will show under all Posts, Pages & CPTs. Just click in "Create gallery" button, then add the images you want from Media to our new gallery.
+*Then, you have to create a action with the same name of the data-tttloadmore-do*
+```php
+function loadmore_archiveposts( $page, $args = false ){
 
-### How do I use the gallery. Shortcodes
-
-*Simple Shortcode*
-
-`[tttgallery]` Insert this shortcode into the editor, and that´s it, don´t need to use the Gallery ID or any other configuration. If you have more than one galleries use the same shortcode twice, the plugin handle the position of the galleries by the position they are in the metabox.
-
-*Selected Gallery (by ID)*
-
-
-
-# Hacks
-
-`/* Remove Gallery Metabox from specific content */`
-
+    $archiveposts = array(
+        'post_type'	 =>	'post',
+        'post_status' => 'publish',
+        'order' => 'DESC',
+        'orderby' => 'date',
+        'paged' => $page,
+        'ignore_sticky_posts' => 1,
+        'category_name' => $args['category'],
+    );
+    $archiveposts_query = new WP_Query($archiveposts);
+    ?>
+    <?php if ($archiveposts_query->have_posts()) : ?>
+    	<?php while ($archiveposts_query->have_posts()) : $archiveposts_query->the_post(); ?>
+				<?php get_template_part( 'partials/content', 'content' ); ?>
+        <?php wp_reset_postdata();?>
+    	<?php endwhile; ?>
+    <?php endif;?>
+    
+    <?
+}
+add_action('ttt_loadmore_archiveposts','loadmore_archiveposts', 1, 2);
+```
 
 # Installation
 
@@ -41,10 +59,3 @@ e.g.
 
 1. Upload `ttt-loadmore folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-
-
-# Frequently Asked Questions
-
-## Do TTT Gallery create a new folder for galleries ?
-
-No. The images stays where they have to be, in /uploads
