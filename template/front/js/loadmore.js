@@ -7,6 +7,7 @@ jQuery(document).ready(function($){
         $(this).trigger('ttt-loadmore:before-click');
         if ( $(this).data('break') == true ) return false;
 
+        var button = $(this);
         var ndo = $(this).attr('data-tttloadmore-do');
         var to = $(this).attr('data-tttloadmore-to');
         var page = Number( $(this).attr('data-tttloadmore-page') );
@@ -41,7 +42,10 @@ jQuery(document).ready(function($){
                 $(this).trigger('ttt-loadmore:before-load', [data, el] );
                 if ( $(this).data('break') == true ) return false;
 
-                $(this).append( el );
+                if (el.length <= 0)
+                    $(button).fadeOut();
+                else
+                    $(this).append( el );
 
                 $(this).trigger('ttt-loadmore:after-load', [data, el] );
 
