@@ -16,6 +16,7 @@ WordPress plugin to loadmore event with your own template
 = Whow to use =
 
 *The base html is like this:*
+
     <a href="#" data-tttloadmore-do="archiveposts" data-tttloadmore-to="#main" data-tttloadmore-args="category:php;">
       Load more content
     </a>
@@ -57,6 +58,6 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Upload `ttt-loadmore folder to the `/wp-content/plugins/` directory
+1. Upload `ttt-loadmore` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
