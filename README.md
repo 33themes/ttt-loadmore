@@ -3,7 +3,7 @@
 - Contributors: 33themes, gabrielperezs, lonchbox, tomasog
 - Tags: loadmore, pagination, posts pagination, core pagination, vertical pagination, posts per page, pagination animation
 - Requires at least: 3.7
-- Tested up to: 4.0
+- Tested up to: 4.3
 - Stable tag: master
 - License: GPLv2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,7 +53,7 @@ function loadmore_archiveposts( $page, $args = false ){
 }
 add_action('ttt_loadmore_archiveposts','loadmore_archiveposts', 1, 2);
 ```
-
+ 
 # Installation
 
 This section describes how to install the plugin and get it working.
