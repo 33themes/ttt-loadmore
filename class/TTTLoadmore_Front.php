@@ -6,5 +6,3 @@ class TTTLoadmore_Front extends TTTLoadmore_Common {
         parent::init();
     }
 }
-
-?>

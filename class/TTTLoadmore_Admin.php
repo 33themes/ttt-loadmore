@@ -7,4 +7,3 @@ class TTTLoadmore_Admin extends TTTLoadmore_Common {
     }
 }
 
-?>
