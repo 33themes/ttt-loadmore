@@ -3,7 +3,7 @@
 **Tags:** loadmore, pagination, posts pagination, core pagination, vertical pagination, posts per page, pagination animation  
 **Requires at least:** 3.7  
 **Tested up to:** 4.3  
-**Stable tag:** 1.1  
+**Stable tag:** 1.1.1 
 **License:** GPLv2  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 

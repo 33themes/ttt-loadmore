@@ -3,7 +3,7 @@
 Plugin Name: TTT LoadMore
 Plugin URI: http://www.33themes.com
 Description: Load more content in your theme from AJAX event
-Version: 1.1
+Version: 1.1.1
 Author: 33 Themes UG i.Gr.
 Author URI: http://www.33themes.com
 */
