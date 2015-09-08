@@ -13,6 +13,8 @@
 
 WordPress plugin to loadmore event with your own template
 
+This plugin is in the wordpress.org repository (https://wordpress.org/plugins/ttt-loadmore/)
+
 
 ## How to use
 
