@@ -1,6 +1,6 @@
 # TTT Loadmore
 
-* **Contributors:** 33themes, gabrielperezs, lonchbox, tomasog
+* **Contributors:** 33themes, gabrielperezs, lonchbox, tomasog, 11bits
 * **Tags:** loadmore, pagination, posts pagination, core pagination, vertical pagination, posts per page, pagination animation
 * **Requires at least:** 3.7
 * **Tested up to:** 4.3
