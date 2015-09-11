@@ -1,12 +1,12 @@
 # TTT Loadmore
 
-**Contributors:** 33themes, gabrielperezs, lonchbox, tomasog, 11bits
-**Tags:** loadmore, pagination, posts pagination, core pagination, vertical pagination, posts per page, pagination animation
-**Requires at least:** 3.7
-**Tested up to:** 4.3
-**Stable tag:** 1.1.1
-**License:** GPLv2
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+* Contributors: 33themes, gabrielperezs, lonchbox, tomasog, 11bits
+* Tags: loadmore, pagination, posts pagination, core pagination, vertical pagination, posts per page, pagination animation
+* Requires at least: 3.7
+* Tested up to: 4.3
+* Stable tag: 1.1.1
+* License: GPLv2
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 WordPress plugin to load more event with your own template.
@@ -21,11 +21,11 @@ For code contributions please go to https://github.com/33themes/ttt-loadmore
 
 *This is the base html:*
 
-```
+`
 <a href="#" data-tttloadmore-do="archiveposts" data-tttloadmore-to="#main" data-tttloadmore-args="category:php;">
     Load more content
 </a>
-```
+`
 
 * data-tttloadmore-do* is the action to load more content
 * data-tttloadmore-to* is where the script put the content after load more posts (the result of the "do" action)
@@ -33,7 +33,7 @@ For code contributions please go to https://github.com/33themes/ttt-loadmore
 
 *Then, you have to create an action with the same name of the data-tttloadmore-do*
 
-```
+`
 <?php
 function loadmore_archiveposts( $page, $args = false ){
 
@@ -60,7 +60,7 @@ function loadmore_archiveposts( $page, $args = false ){
 }
 add_action('ttt_loadmore_archiveposts','loadmore_archiveposts', 1, 2);
 ?>
-```
+`
 
 ## Changelog
 
