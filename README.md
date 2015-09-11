@@ -1,11 +1,12 @@
-# TTT Loadmore #
-**Contributors:** 33themes, gabrielperezs, lonchbox, tomasog  
-**Tags:** loadmore, pagination, posts pagination, core pagination, vertical pagination, posts per page, pagination animation  
-**Requires at least:** 3.7  
-**Tested up to:** 4.3  
-**Stable tag:** 1.1.1 
-**License:** GPLv2  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+# TTT Loadmore
+
+**Contributors:** 33themes, gabrielperezs, lonchbox, tomasog
+**Tags:** loadmore, pagination, posts pagination, core pagination, vertical pagination, posts per page, pagination animation
+**Requires at least:** 3.7
+**Tested up to:** 4.3
+**Stable tag:** 1.1.1
+**License:** GPLv2
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
 
 WordPress plugin to loadmore event with your own template
