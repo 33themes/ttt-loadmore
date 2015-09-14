@@ -17,7 +17,7 @@ WordPress plugin to load more event with your own template.
 
 For code contributions please go to https://github.com/33themes/ttt-loadmore
 
-## How to use it
+### How to use it
 
 *This is the base html:*
 
